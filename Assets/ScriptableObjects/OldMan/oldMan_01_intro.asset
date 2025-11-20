@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669b2765012dcf0419ac8691d2bbba10, type: 3}
+  m_Name: oldMan_01_intro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  NodeId: oldMan_01_intro
+  SpeakerName: Old Man
+  DialogueText: '"Hello traveler.  Can you help me find my lost ring?"'
+  Choices:
+  - ChoiceText: '["Sure, I''ll help."]'
+    NextNodeId: oldMan_02_accepted
+    ReloadScene: 0
+    RequiredFlags: []
+    ForbiddenFlags: []
+    GrantFlags:
+    - accepted_oldManQuest
+  - ChoiceText: '["No, sorry."]'
+    NextNodeId: 
+    ReloadScene: 0
+    RequiredFlags: []
+    ForbiddenFlags: []
+    GrantFlags:
+    - accepted_oldManQuest

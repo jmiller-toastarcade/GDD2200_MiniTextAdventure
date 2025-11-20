@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669b2765012dcf0419ac8691d2bbba10, type: 3}
+  m_Name: oldMan_06_findRing
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  NodeId: oldMan_06_findRing
+  SpeakerName: '[Item Found!]'
+  DialogueText: You find a peculiar looking ring that has a black gem with swirling
+    white mist inside.  The MYSTERIOUS RING was added to your inventory.
+  Choices:
+  - ChoiceText: '[Return to Old Man]'
+    NextNodeId: 
+    ReloadScene: 0
+    RequiredFlags:
+    - accepted_oldManQuest
+    - itemObtained_oldMansRing
+    ForbiddenFlags: []
+    GrantFlags:
+    - 

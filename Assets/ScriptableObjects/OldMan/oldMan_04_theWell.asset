@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669b2765012dcf0419ac8691d2bbba10, type: 3}
+  m_Name: oldMan_04_theWell
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  NodeId: oldMan_04_theWell
+  SpeakerName: Narration
+  DialogueText: You approach the well, covered in vines.  It doesn't look like it
+    has been used for some time.
+  Choices:
+  - ChoiceText: '[SEARCH AROUND WELL]'
+    NextNodeId: oldMan_06_findRing
+    ReloadScene: 0
+    RequiredFlags:
+    - accepted_oldManQuest
+    ForbiddenFlags: []
+    GrantFlags:
+    - itemObtained_oldMansRing
+  - ChoiceText: '[LEAVE]'
+    NextNodeId: oldMan_05_continueJourney
+    ReloadScene: 0
+    RequiredFlags:
+    - accepted_oldManQuest
+    ForbiddenFlags: []
+    GrantFlags: []
